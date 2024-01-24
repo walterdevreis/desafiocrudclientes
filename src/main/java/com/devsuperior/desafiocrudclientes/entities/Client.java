@@ -18,6 +18,8 @@ public class Client {
     private LocalDate birthDate;
     private Integer children;
 
+    public Client(){};
+
     public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
         this.name = name;
@@ -41,6 +43,14 @@ public class Client {
 
     public String getCpf() {
         return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
     }
 
     public Double getIncome() {
@@ -87,4 +97,6 @@ public class Client {
                 ", children=" + children +
                 '}';
     }
+
+
 }

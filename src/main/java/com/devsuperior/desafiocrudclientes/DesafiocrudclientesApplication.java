@@ -15,9 +15,6 @@ public class DesafiocrudclientesApplication {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 		SpringApplication.run(DesafiocrudclientesApplication.class, args);
-
-		Client client = new Client(1L, "Walter", "058.964.789-20", 3200.00, LocalDate.of(1992, 07, 10), 3);
-		System.out.println(client);
 	}
 
 }
